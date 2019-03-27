@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>注册</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/register.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>
 <header>
@@ -11,16 +14,16 @@
 <h1>创建帐户</h1>
 <section>
     <form action="#" method="GET">
-        <p>
+        <p >
             用户名（只支持大小写字母、数字和下划线）<br>
             <input type="text" name="personname"  required pattern="^\w+$">
         </p>
         <p>
-            密码（8 位以上，只允许大小写字母加数字）<br>
+            密 码（8 位以上，只允许大小写字母加数字）<br>
             <input type="password" name="password"   required pattern="^[A-Za-z0-9]{8，}$" >
         </p>
         <p>
-        确认密码<br>
+        确认密码:<br>
         <input type="password" name="repassword"   required  pattern="^[A-Za-z0-9]{8，}$"  >
         </p>
         <p>
@@ -64,17 +67,23 @@
             </select>
         </p>
         <p>
-            手机号<br>
+            手机号:<br>
             <input type="text" name="telephonenumber" required  pattern="^1[0-9]{10}$ " ><br>
         </p>
         <p>
             常用设备<br>
-            <label><input   type="checkbox" value="" />PC </label><br>
-            <label><input   type="checkbox" value="" />PlayStation 4 </label><br>
-            <label><input   type="checkbox" value="" />XBox One </label><br>
-            <label><input   type="checkbox" value="" />Nintendo Switch </label><br>
+             <input   type="checkbox" value="PC" />PC
+             <input   type="checkbox" value="PlayStation 4" />PlayStation 4
+             <input   type="checkbox" value="XBox One" />XBox One
+             <input   type="checkbox" value="Nintendo Switch " />
 
+        </p>
 
+        <p>
+            输入答案<br>
+            residue of 1/(z^2+4)^2 at z=2i<br>
+            <input type="text" name="captcha">
+            <input type="button" value="刷新">
         </p>
 
         <p>
@@ -154,13 +163,6 @@
         <br>
 
         <p>
-            验证码
-        </p>
-        <img src="images/yanzhengma.png "><br>
-        <input type="text"   name="yanzhengma" required>
-
-        <p>
-
             <input type="submit" value="注册" name="continue">
         </p>
 
